@@ -1,1 +1,5 @@
-document.write(window.location.search);
+const queryString = window.location.search;
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.textContent = queryString;
+});
